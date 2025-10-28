@@ -1,0 +1,23 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+    <script src="index.js" defer></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <title>ChemBal</title>
+</head>
+
+<body>
+    <h1>ChemBal</h1>
+    <div id="equation">
+        <p id="eqin" type="text" contenteditable="true">Start typing an equation here!</p>
+        <button id="calc" onclick="calculate()">Calculate</button>
+    </div>
+    <div id="buttons">
+        <button id="sub" onclick="addsub()">Subscript<sub>2</sub></button>
+        <!-- <button id="sup" onclick="addsup()">Charge<sup>+2</sup></button> -->
+        <button id="arrow" onclick="addarrow()">Insert arrow</button>
+    </div>
+    <div id="boxes">
+        <!--  boxes added by js -->
+    </div>
+</body>
