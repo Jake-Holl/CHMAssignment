@@ -150,7 +150,6 @@ function addbox(element){
         sum += (ptable.find(el => el.symbol === i).atomic_mass * mult)
     });
     molarmass.value = parseFloat(sum.toFixed(4)) // remove trailing 0's and limit to 4 decimal points 
-    // to get rid of floating point stuff, might have to check if its ever .9999 instead of 1
 
     const labelmolarmass = document.createElement('label')
     labelmolarmass.htmlFor = molarmass.id
