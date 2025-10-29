@@ -143,7 +143,7 @@ function addbox(element){
     }
     mmcalc.forEach(i => {
         let mult = 1
-        if(num_str.includes(i.charAt(i.length - 1))){
+        while(num_str.includes(i.charAt(i.length - 1))){
             mult = i.charAt(i.length - 1)
             i = i.substring(0, i.length - 1)
         }
